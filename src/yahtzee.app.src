@@ -1,0 +1,12 @@
+{application, yahtzee,
+ [
+  {description, "Play some yahtzee."},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { yahtzee_app, []}},
+  {env, []}
+ ]}.
