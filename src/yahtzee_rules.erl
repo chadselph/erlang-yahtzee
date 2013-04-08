@@ -5,8 +5,8 @@
 -include("yahtzee_rules.hrl").
 
 %% API
--export([score_for_combination/2]).
--compile(export_all).
+-export([score_for_combination/2, is_game_over/1, total_score/1,
+         lower_score/1, upper_score/1, choose_combination/3]).
 
 -spec is_game_over(scoreboard()) -> boolean().
 is_game_over(Scorecard) ->
